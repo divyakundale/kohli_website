@@ -19,6 +19,7 @@ a {
 
 a:hover {
   color: #5faee3;
+
   text-decoration: none;
 }
 
@@ -70,33 +71,34 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 22px 0;
+ // padding: 22px 0;
 }
 
 #header.header-scrolled {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
   background: #fff;
 }
 
-#header .logo h1 {
+/*#header .logo h1 {
   font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-}
+}*/
 
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #222222;
+ 
   text-decoration: none;
 }
 
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 70px;
 }
 
 @media (max-width: 768px) {
@@ -104,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
   }
   #header .logo h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
@@ -187,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #3498db;
+//color: black;
 }
 
 .nav-menu .drop-down > a:after {
@@ -392,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #3498db;
+  background: #0066ff;
   color: #fff;
 }
 
@@ -554,7 +557,8 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about .content h3 {
+.about .content h4 {
+  text-align: center;
   font-weight: 600;
   font-size: 26px;
 }
@@ -607,6 +611,10 @@ section {
   background: #3498db;
   color: #fff;
   text-decoration: none;
+}
+
+.leading-relaxed{
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -717,6 +725,7 @@ section {
 
 .services .icon-box:hover::before {
   background: #3498db;
+  //background:rgb(179, 179, 0);
   right: 0;
   top: 0;
   width: 100%;
@@ -763,7 +772,7 @@ section {
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  //background: #fff;
 }
 
 .services .icon-box:hover .icon i {
@@ -787,15 +796,19 @@ section {
   background-position: center center;
 }
 
-.more-services .card-body {
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  transition: ease-in-out 0.4s;
-  border-radius: 5px;
+
+.more-services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #3498db;
+  transition: all 0.3s ease-in-out;
 }
+
 
 .more-services .card-title {
   font-weight: 700;
@@ -824,7 +837,8 @@ section {
 }
 
 .more-services .card:hover .card-body {
-  background: #3498db;
+ // background: #3498db;
+ background:rgba(0, 66, 128,0.8);
 }
 
 .more-services .card:hover .read-more a, .more-services .card:hover .card-title, .more-services .card:hover .card-title a, .more-services .card:hover .card-text {
@@ -1164,7 +1178,8 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  background: #ffff;
+  box-shadow: 2px 2px 3px 2px grey;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1172,8 +1187,16 @@ section {
   border: 2px solid #f9f9f9;
 }
 
+.pricing .box h3:hover{
+//background-color: rgb(29, 0, 77);
+//padding: 25px;
+//color: #ffff;
+// box-shadow: 5px 5px 6px 5px grey;
+font-weight: 1000;
+}
+
 .pricing .box h3 {
-  font-weight: 400;
+  font-weight: 400 ;
   padding: 15px;
   margin-top: 15px;
   font-size: 18px;
@@ -1567,21 +1590,23 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: rgba(0, 0,26,0.7);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
-  color: #222222;
+  color: #fff;
   font-size: 14px;
 }
 
 #footer .credits {
   font-size: 13px;
   padding-top: 5px;
-  color: #222222;
+  //color: #222222;
+   color: #fff;
 }
 
 #footer .footer-links a {
-  color: #222222;
+  //color: #222222;
+   color: #fff;
   padding-left: 15px;
 }
 
